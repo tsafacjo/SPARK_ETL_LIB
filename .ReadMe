@@ -1,0 +1,5 @@
+
+* ETL SPARK
+
+The goal of this project is to create an ETL base project that could read different data files
+and output result in a dedicated file.
