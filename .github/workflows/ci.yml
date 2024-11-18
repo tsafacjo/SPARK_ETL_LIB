@@ -29,12 +29,9 @@ jobs:
 
     - name: Run tests with coverage
       run: |
-        pytest --cov=your_package_name --cov-report=xml
-
+        pytest --cov=your_package_name --cov-report=xml:coverage.xml
+        
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3
       with:
-        token: ${{ secrets.CODECOV_TOKEN }} # Set this in your repository secrets
-        files: ./coverage.xml
-        flags: unittests
-        fail_ci_if_error: true
+        files: coverage.xml
