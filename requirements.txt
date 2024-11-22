@@ -1,4 +1,5 @@
 pyspark
 spark
+mockito
 pytest
 pytest-cov
